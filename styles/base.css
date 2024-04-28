@@ -9,33 +9,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
 
 /* Set font family for the body */
-body {
-    font-family: 'Sansita', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+h1, h2, h3, text, text {
+    font-family: 'DM Sans', serif;
+  }
+
 
 /* Style the header */
 header {
-    background-color: #36454f; /* Navy blue background */
+    background-color: #1f9c92; /* Navy blue background */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
     padding: 20px;
 }
 
 /* Style the navigation menu */
-nav {
-    background-color: #36454f;
-    margin: 0 auto;
-    max-width: 800px;
-}
-nav ul {
-    list-style-type: none;
-}
-nav li {
-    display: block;
-}
+
+header {
+    /* Arranges menu in different row*/
+    display: grid; /* Enables elements to arrange elements horizontally */
+    list-style: none;
+    font-family: 'DM Sans', serif;
+    align-items: center; /* Aligns elements vertically in the center */
+    /* Add margins/padding for spacing as needed */
+  }
+  
+  h1 {
+    /* Adjust font size, weight, and other styles as desired */
+  }
+  
+  nav {
+    display: flex; /* Makes the menu items a flexbox for inline arrangement */
+    background-color: #1f9c92;
+    justify-content: center;
+    word-spacing: inherit;
+    list-style: none; /* Removes bullet points if present */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+  }
+  
+  nav a {
+    padding: 10px; /* Add padding for spacing between links */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+
 nav a {
     display: block;
     color: #fff;
@@ -60,22 +78,45 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
+    font-family: 'DM Sans', serif;
 }
 
 /* Style the card class */
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #eaeaea;
+    border: 1px solid #8bd7d1;
     padding: 20px;
     border-radius: 5px;
 }
 
+/* To remove the bullet points on the Resources list*/
+.card ul {
+    list-style: none;
+  }  
+
+
+
+
+.about-me-container {
+    display: flex; /* Enables elements to arrange in a row */
+    /* Add margins/padding for spacing as needed */
+  }
+  
+  .about-me-text {
+    flex: 1; /* Makes the text content flexible within the container */
+    /* Add paddings for spacing as needed */
+    padding: 10px; /* Add padding for spacing */
+  }
+
+
+
 /* Style the footer */
 footer {
-    background-color: #36454f;
-    color: #fff;
+    background-color: #1f9c92;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
+    font-family: 'DM Sans', serif;
 }
 
 /* Media query for larger views */

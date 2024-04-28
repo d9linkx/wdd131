@@ -8,10 +8,13 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Prince C. Dike</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Prince, Keyword summary of page content">
     <meta name="author" content="Prince C. Dike">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap">
+
     <link rel="stylesheet" href="styles/base.css">
-    <!-- Let's now add the javascript reference -->
     <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - Prince C. Dike</h1>
@@ -24,11 +27,15 @@
     </header>
     <main>
         <section class="card">
-            <h2>About Me</h2>
-            <p>I'm Prince, from the Igbo tribe of Nigeria. I craft compelling copy that's as sharp as a well-tuned blade.</p>
-            <p>I am a student of Brigham Young University Idaho Online, and I have over four years of experience writing for B2B tech and SaaS companies. I've learned to slice through jargon and deliver messaging that hits the mark.</p>
-            <p>I believe that creativity can come from anywhere. I'm always looking for new ways to express myself and inspire others with my words.</p>
-        </section>        
+            <div class="about-me-container"> <div class="about-me-text">  <h2>About Me</h2>
+                <p>I'm Prince, from the Igbo tribe of Nigeria. I craft compelling copy that's as sharp as a well-tuned blade.</p>
+                <p>I am a student of Brigham Young University Idaho Online, and I have over four years of experience writing for B2B tech and SaaS companies. I've learned to slice through jargon and deliver messaging that hits the mark.</p>
+                <p>I believe that creativity can come from anywhere. I'm always looking for new ways to express myself and inspire others with my words.</p>
+            </div>
+            <div class="profile-photo-container"> <img class="profile-photo" src="images/profile.jpg" alt="Prince Dike - Profile Picture" width="250" height="350">
+            </div>
+        </div>
+        </section>         
         <section class="card">
             <h2>Resources</h2>
             <ul>
@@ -38,10 +45,13 @@
                 <li><a href="https://www.metafinix.com">Metafinix</a></li>
             </ul>
         </section>
+    </main>
+    <main>
         <section class="card">
             <h2>Nigeria</h2>
             <p>Heart of Africa: vibrant cultures, rich history, bustling cities, diverse wildlife, and the indomitable spirit of the Nigerian people.</p>
         </section>
+    </main>
         <!-- I can add more sections here with different content if needed -->
     </main>
     <footer>
@@ -53,4 +63,5 @@
         document.getElementById('lastModified').textContent = document.lastModified;
     </script>
 </body>
+
 </html>

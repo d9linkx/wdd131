@@ -40,7 +40,7 @@ header {
   
   nav {
     display: flex; /* Makes the menu items a flexbox for inline arrangement */
-    background-color: #1f9c92;
+    background-color: #212121;
     justify-content: center;
     word-spacing: inherit;
     list-style: none; /* Removes bullet points if present */
@@ -50,6 +50,7 @@ header {
   
   nav a {
     padding: 10px; /* Add padding for spacing between links */
+    margin: auto;
     text-decoration: none; /* Removes underline from links */
   }
   

@@ -1,36 +1,26 @@
 /* Media query for larger screens (adjust as needed) */
 @media (min-width: 500px) {
 
-  /* Header Styles (optional adjustments) */
-  h1 {
-    font-size: 1.8rem; /* Adjust font size for larger view */
-  }
-
-  /* Navigation Styles (optional adjustments) */
-  nav {
-    /* Option 1: Maintain inline navigation (adjust padding/margin) */
-    /* padding: 1rem; /* Add padding if needed */
-    /* margin: 0 1rem; /* Add some margin for separation */
-
-    /* Option 2: Separate navigation bar (consider a background color) */
-    /* background-color: #eee; /* Light background color */
-    /* padding: 1rem; */
-  }
-  nav a {
-    margin-right: 1.5rem; /* Add spacing between links */
-  }
-
-  /* Main Content Styles */
-  main {
-    max-width: 900px; /* Adjust max-width for larger view */
-    margin: 0 auto; /* Center content horizontally */
+    /* Header Styles (optional adjustments) */
+    h1 {
+      font-size: 1.8rem; /* Adjust font size for larger view */
+    }
+  
+    /* Navigation Styles (optional adjustments) */
+    nav li {
+      margin-right: 1.5rem;
+    }
+  
+    /* Main Content Styles */
+    main {
+      max-width: 900px; /* Adjust max-width for larger view */
+      margin: 0 auto; /* Center content horizontally */
     padding: 2rem; /* Add some padding for better separation */
+    }
+  
+    /* Figure Styles */
+    .figure {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    }
   }
-
-  /* Figure Styles (Responsive Columns) */
-  figure {
-    display: grid; /* Ensure grid layout is applied */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-    grid-gap: 1rem; /* Spacing between columns */
-  }
-}
+  

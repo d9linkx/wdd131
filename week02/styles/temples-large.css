@@ -1,0 +1,32 @@
+/* Styles for larger screens (768px and wider) */
+@media (min-width: 768px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    nav {
+      flex-direction: row; /* Maintain horizontal layout on larger screens */
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    figure {
+      width: calc(33% - 2rem); /* Adjust width based on columns */
+      margin: 1rem;
+    }
+  }
+  

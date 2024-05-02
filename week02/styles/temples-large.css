@@ -1,5 +1,5 @@
 /* Media query for larger screens (adjust as needed) */
-@media (min-width: 500px) {
+@media (min-width: 768px) {
 
     /* Header Styles (optional adjustments) */
     h1 {
@@ -14,15 +14,12 @@
     /* Main Content Styles */
     main {
       max-width: 900px; /* Adjust max-width for larger view */
-      margin: 0 auto; /* Center content horizontally */
-    padding: 2rem; /* Add some padding for better separation */
     }
   
     /* Figure Styles */
     .figure {
-      display: grid; /* Ensure grid layout is applied */
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-      grid-gap: 1rem; /* Spacing between columns */
     }
   }
   
+

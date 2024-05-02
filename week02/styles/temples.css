@@ -1,49 +1,79 @@
-/* Basic styles for all screen sizes */
+/* Import fonts from Google Fonts (Choose your fonts here) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Body Styles */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, main, footer {
-    padding: 1rem;
-  }
-  
-  h1, h2 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  img {
-    width: 100%;
-    display: block;
-  }
-  
-  figure {
-    margin: 1rem 0;
-  }
-  
-  figcaption {
-    text-align: center;
-    font-style: italic;
-  }
-  
-  footer {
-    text-align: center;
-  }
-  
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff; /* White header background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 1.5rem; /* Adjust font size for mobile */
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+/* Main Content Styles */
+main {
+  max-width: 700px; /* Limit main content width */
+  margin: 2rem auto; /* Center horizontally */
+}
+
+/* Figure Styles */
+.figure {
+  display: grid;
+  grid-template-columns: 1fr; /* One column for mobile */
+  grid-gap: 1rem; /* Spacing between figures */
+}
+
+figure img {
+  width: 100%; /* Images fill the figure width */
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee; /* Light gray footer background */
+}

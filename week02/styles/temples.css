@@ -15,17 +15,18 @@ body {
 
 /* Navigation Styles */
 nav {
-  display: flex; /* Horizontal alignment */
-  justify-content: space-between; /* Distribute items evenly */
+  display: flex; /* Already set for horizontal alignment */
+  justify-content: space-between; /* Distribute items horizontally */
   align-items: center;
   padding: 1rem 2rem;
   background-color: #333; /* Dark navigation bar */
   color: #fff; /* Light text color */
 }
 
+
 nav li {
   list-style: none;
-  margin-right: 1rem; /* Spacing between navigation items */
+  margin-right: 1rem;
 }
 
 nav li a {
@@ -75,7 +76,7 @@ main {
   text-align: center;
 }
 
-/* Optional Styles */
+/* Footer Styles (Optional) */
 footer {
   text-align: center;
   padding: 1rem;

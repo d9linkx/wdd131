@@ -15,8 +15,8 @@ body {
 
 /* Navigation Styles */
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Horizontal alignment */
+  justify-content: space-between; /* Distribute items evenly */
   align-items: center;
   padding: 1rem 2rem;
   background-color: #333; /* Dark navigation bar */
@@ -25,7 +25,7 @@ nav {
 
 nav li {
   list-style: none;
-  margin-right: 1rem;
+  margin-right: 1rem; /* Spacing between navigation items */
 }
 
 nav li a {
@@ -75,7 +75,7 @@ main {
   text-align: center;
 }
 
-/* Footer Styles (Optional) */
+/* Optional Styles */
 footer {
   text-align: center;
   padding: 1rem;

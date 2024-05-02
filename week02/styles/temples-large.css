@@ -20,7 +20,9 @@
   
     /* Figure Styles */
     .figure {
+      display: grid; /* Ensure grid layout is applied */
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+      grid-gap: 1rem; /* Spacing between columns */
     }
   }
   

@@ -1,85 +1,96 @@
-/* Import fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* Import fonts from Google Fonts (Choose your fonts here) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-/* Global Styles */
-* {
-  box-sizing: border-box;
+/* Body Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #f5f5f5; /* Light background */
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff; /* White header background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 1.5rem; /* Adjust font size for mobile */
+  margin: 0;
 }
 
 /* Navigation Styles */
 nav {
-  display: flex; /* Already set for horizontal alignment */
-  justify-content: space-between; /* Distribute items horizontally */
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333; /* Dark navigation bar */
-  color: #fff; /* Light text color */
+  display: flex;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 nav li {
-  list-style: none;
   margin-right: 1rem;
 }
 
-nav li a {
+nav a {
   text-decoration: none;
   color: inherit;
 }
 
-nav li a:hover {
-  color: #999; /* Lighter hover color */
-}
-
-/* Hamburger Menu (Mobile Only) */
-.hamburger-menu {
-  display: block; /* Show in mobile view */
-  cursor: pointer;
-  font-size: 1.5rem;
-  border: none;
-  background-color: transparent;
-}
-
-.navigation.hidden {
-  display: none; /* Hide navigation menu on click */
+nav a:hover {
+  color: #007bff; /* Blue hover color */
 }
 
 /* Main Content Styles */
 main {
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 900px; /* Adjust for larger screens (consider media queries) */
+  max-width: 700px; /* Limit main content width */
+  margin: 2rem auto; /* Center horizontally */
 }
 
-/* Figure Styles (Mobile View - Single Column) */
+/* Figure Styles */
 .figure {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* One column for mobile */
+  grid-gap: 1rem; /* Spacing between figures */
+}
+
+figure img {
+  width: 100%; /* Images fill the figure width */
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee; /* Light gray footer background */
+}
+
+
+
+/* Mobile View (Single Column) */
+.figure {
+  display: grid;
+  grid-template-columns: 1fr; /* One figure per row */
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.figure-caption {
-  text-align: center;
-}
-
-/* Footer Styles (Optional) */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
+/* Adjust for Larger Screens (temples-large.css) */
+@media (min-width: 768px) {
+  .figure {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  }
 }

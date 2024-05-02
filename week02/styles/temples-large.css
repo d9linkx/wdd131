@@ -1,5 +1,5 @@
 /* Media query for larger screens (adjust as needed) */
-@media (min-width: 768px) {
+@media (min-width: 500px) {
 
     /* Header Styles (optional adjustments) */
     h1 {

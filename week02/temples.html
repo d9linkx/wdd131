@@ -27,6 +27,16 @@
       <figcaption>Temple Name</figcaption>
     </figure>
     </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> Prince Dike, Nigeria</p>
+      <p id="lastModified"></p>
+  </footer>
+  <script>
+      document.getElementById('currentyear').textContent = new Date().getFullYear();
+      document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
   <script src="scripts/temples.js" defer></script>
+
 </body>
 </html>

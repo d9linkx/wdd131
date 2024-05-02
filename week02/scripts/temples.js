@@ -1,28 +1,22 @@
-const templeFigures = document.querySelectorAll("figure");
+// Update footer copyright year and last modified date
+const copyrightYear = document.querySelector('#copyrightYear');
+const lastModified = document.querySelector('#lastModified');
 
-templeFigures.forEach((figure) => {
-  figure.addEventListener("click", openLightbox);
+copyrightYear.textContent = new Date().getFullYear();
+lastModified.textContent = document.lastModified;
+
+// Hamburger menu functionality
+const hamburgerButton = document.querySelector('.hamburger-menu');
+const navigationMenu = document.querySelector('.navigation');
+
+hamburgerButton.addEventListener('click', () => {
+  navigationMenu.classList.toggle('hidden');
+  hamburgerButton.classList.toggle('active');
 });
 
-function openLightbox(event) {
-  const clickedImage = event.currentTarget.querySelector("img");
-  const lightbox = document.createElement("div"); // Create lightbox element
-  lightbox.classList.add("lightbox"); // Add a class for styling
-
-  // Add a larger version of the image to the lightbox
-  const lightboxImage = document.createElement("img");
-  lightboxImage.src = clickedImage.src;
-  lightbox.appendChild(lightboxImage);
-
-  // Add functionality to close the lightbox (optional)
-  lightbox.addEventListener("click", closeLightbox);
-
-  // Add the lightbox to the body
-  document.body.appendChild(lightbox);
-}
-
-function closeLightbox(event) {
-  if (event.target.classList.contains("lightbox")) {
-    event.target.remove(); // Remove the lightbox element
-  }
+// Show hamburger menu only on mobile screens (can be adjusted based on your needs)
+if (window.screen.width <= 768) {
+  hamburgerButton.style.display = 'block';
+} else {
+  hamburgerButton.style.display = 'none';
 }

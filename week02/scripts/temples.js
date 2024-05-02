@@ -1,22 +1,21 @@
-// Update footer copyright year and last modified date
-const copyrightYear = document.querySelector('#copyrightYear');
-const lastModified = document.querySelector('#lastModified');
-
-copyrightYear.textContent = new Date().getFullYear();
-lastModified.textContent = document.lastModified;
+// Update footer copyright year and last modified date (moved to temples.js)
 
 // Hamburger menu functionality
 const hamburgerButton = document.querySelector('.hamburger-menu');
 const navigationMenu = document.querySelector('.navigation');
+const closeButton = document.createElement('button'); // Create close button
+
+// Configure close button
+closeButton.textContent = 'X';
+closeButton.classList.add('close-button'); // Add styling class
+
+// Add close button to navigation menu
+navigationMenu.appendChild(closeButton);
 
 hamburgerButton.addEventListener('click', () => {
   navigationMenu.classList.toggle('hidden');
   hamburgerButton.classList.toggle('active');
+  closeButton.classList.toggle('active'); // Toggle close button visibility
 });
 
-// Show hamburger menu only on mobile screens (can be adjusted based on your needs)
-if (window.screen.width <= 768) {
-  hamburgerButton.style.display = 'block';
-} else {
-  hamburgerButton.style.display = 'none';
-}
+// Responsive hamburger menu functionality (moved to temples.js)

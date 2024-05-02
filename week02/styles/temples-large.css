@@ -1,0 +1,24 @@
+/* Media query for larger screens (adjust as needed) */
+@media (min-width: 768px) {
+
+    /* Header Styles (optional adjustments) */
+    h1 {
+      font-size: 1.8rem; /* Adjust font size for larger view */
+    }
+  
+    /* Navigation Styles (optional adjustments) */
+    nav li {
+      margin-right: 1.5rem;
+    }
+  
+    /* Main Content Styles */
+    main {
+      max-width: 900px; /* Adjust max-width for larger view */
+    }
+  
+    /* Figure Styles */
+    .figure {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    }
+  }
+  

@@ -1,107 +1,96 @@
-@media (min-width: 768px) {
+/* Import fonts from Google Fonts (Choose your fonts here) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-
-* {
+/* Body Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff; /* White header background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 h1 {
-  text-align: left;
-  font-family: times, serif;
-  font-size: 1.5rem;
-  margin-left: 1rem;
+  font-size: 1.5rem; /* Adjust font size for mobile */
+  margin: 0;
 }
 
-h2 {
-  font-size: 1.2rem;
-  color: navy;
-  text-align: left;
-  margin: 1rem;
-}
-
+/* Navigation Styles */
 nav {
-  max-width: 700px;
-  margin: 1rem auto;
+  display: flex;
 }
 
-/* small view navigation */
-#menu {
-  font-size: 1.5rem;
-  border: 0;
-  background: none;
-  color: #000;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-#menu::before {
-  content: "☰";
-}
-
-#menu.open::before {
-  content: "❎";
-}
-
-.navigation {
-  display: flex; /* Horizontal layout */
+nav ul {
   list-style: none;
-  background-color: #333;
-  color: #fff;
+  padding: 0;
+  margin: 0;
 }
 
-.navigation a {
-  padding: 1rem;
-  text-align: center;
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
 }
 
-.navigation a:hover {
-  background-color: #bbb;
-  color: #333;
-  font-weight: 700;
+nav a:hover {
+  color: #007bff; /* Blue hover color */
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-  display: block;
+/* Main Content Styles */
+main {
+  max-width: 700px; /* Limit main content width */
+  margin: 2rem auto; /* Center horizontally */
 }
 
-.stuff {
-  margin: 0.5m;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #bed;
-  max-width: 580px;
-  height: 100vh;
+/* Figure Styles */
+.figure {
+  display: grid;
+  grid-template-columns: 1fr; /* One column for mobile */
+  grid-gap: 1rem; /* Spacing between figures */
 }
 
-/* large view navigation */
-@media (min-width: 37.5em) {
-  h1 {
-    font-size: 2.5rem;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  #menu {
-    display: none; /* hide hamburger button */
-  }
-
-  .navigation a {
-    flex: 1 1 100%; /* Equal width in large screens */
-  }
-
-  .stuff {
-    margin: 1rem auto;
-  }
+figure img {
+  width: 100%; /* Images fill the figure width */
+  height: auto;
 }
 
+figcaption {
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee; /* Light gray footer background */
+}
+
+
+
+/* Mobile View (Single Column) */
+.figure {
+  display: grid;
+  grid-template-columns: 1fr; /* One figure per row */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Adjust for Larger Screens (temples-large.css) */
+@media (min-width: 768px) {
+  .figure {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  }
 }

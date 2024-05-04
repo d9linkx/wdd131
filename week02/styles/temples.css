@@ -45,6 +45,8 @@ nav a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  /* You can change the font-family here to customize the navigation font  */
+  font-family: 'DM Sans', sans-serif;  /* Example using DM Sans font */
 }
 
 nav a:hover {

@@ -6,21 +6,11 @@ copyrightYear.textContent = new Date().getFullYear();
 lastModified.textContent = document.lastModified;
 
 // Hamburger menu functionality
-const hamburgerButton = document.querySelector('.hamburger-menu'); // Add class in CSS
-const navigationMenu = document.querySelector('.navigation'); // Add class in CSS
-const closeButton = document.createElement('button');
+const menuToggle = document.getElementById('menuToggle'); // Add id in HTML
+const navigationMenu = document.getElementById('menu'); // Add id in HTML
 
-// Configure close button
-closeButton.textContent = 'X';
-closeButton.classList.add('close-button'); // Add styling class in CSS
-
-// Add close button to navigation menu (optional - for better accessibility)
-navigationMenu.appendChild(closeButton);
-
-hamburgerButton.addEventListener('click', () => {
-  navigationMenu.classList.toggle('hidden');
-  hamburgerButton.classList.toggle('active');
-  closeButton.classList.toggle('active'); // Toggle close button visibility
+menuToggle.addEventListener('click', function () {
+  navigationMenu.classList.toggle('show');
 });
 
 // Responsive hamburger menu functionality (optional)
@@ -30,13 +20,14 @@ hamburgerButton.addEventListener('click', () => {
 const mediaQuery = window.matchMedia('(max-width: 768px)'); 
 mediaQuery.addEventListener('change', () => {
   if (mediaQuery.matches) {
-    hamburgerButton.style.display = 'block'; // Show hamburger button on mobile
+    menuToggle.style.display = 'block'; // Show hamburger button on mobile
   } else {
-    hamburgerButton.style.display = 'none'; // Hide hamburger button on larger screens
+    menuToggle.style.display = 'none'; // Hide hamburger button on larger screens
+    navigationMenu.classList.remove('show'); // Also hide the navigation menu
   }
 });
 
 // Alternatively, use feature detection (consider polyfills for older browsers)
 // if (window.matchMedia('only screen and (max-width: 768px)').matches) {
-//   hamburgerButton.style.display = 'block';
+//   menuToggle.style.display = 'block';
 // }

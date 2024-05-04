@@ -11,13 +11,24 @@
   <header>
     <h1>Temple Album</h1>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
+      <div id="menuToggle">
+        <!-- A hidden checkbox is used to check/uncheck the hamburger menu -->
+        <input type="checkbox" />
+        
+        <!-- The hamburger icon -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!-- The navigation menu -->
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
@@ -41,14 +52,12 @@
       <figcaption>Temple Name</figcaption>
       <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
       <figcaption>Temple Name</figcaption>
-      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
-      <figcaption>Temple Name</figcaption>
     </figure>
-    </main>
+  </main>
 
-    <footer>
-      <p>© <span id="currentyear"></span> Prince Dike, Nigeria</p>
-      <p id="lastModified"></p>
+  <footer>
+    <p>© <span id="currentyear"></span> Prince Dike, Nigeria</p>
+    <p id="lastModified"></p>
   </footer>
   <script>
       document.getElementById('currentyear').textContent = new Date().getFullYear();

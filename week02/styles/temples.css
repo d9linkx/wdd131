@@ -26,27 +26,29 @@ h1 {
 }
 
 /* Navigation Styles */
-nav {
-  display: flex;
-}
-
 nav ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 nav li {
+  float: left;
   margin-right: 1rem;
 }
 
 nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: inherit;
 }
 
 nav a:hover {
-  color: #007bff; /* Blue hover color */
+  background-color: #111;
 }
 
 /* Main Content Styles */
@@ -77,8 +79,6 @@ footer {
   padding: 1rem;
   background-color: #eee; /* Light gray footer background */
 }
-
-
 
 /* Mobile View (Single Column) */
 .figure {

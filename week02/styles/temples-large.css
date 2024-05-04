@@ -6,9 +6,16 @@
     font-size: 2rem; /* Larger font size */
   }
 
-  /* Navigation Styles (optional adjustments) */
+  /* Navigation Styles */
+  nav {
+    flex-direction: row; /* Stack navigation items vertically */
+    align-items: center; /* Center them horizontally */
+    margin-top: 1rem; /* Add some margin from the top */
+  }
+
   nav li {
-    margin-right: 2rem; /* More spacing between navigation items */
+    margin-right: 0; /* Remove horizontal spacing */
+    margin-bottom: 1rem; /* Add spacing between items */
   }
 
   /* Main Content Styles */

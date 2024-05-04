@@ -25,13 +25,28 @@ h1 {
   margin: 0;
 }
 
+
+
 /* Navigation Styles */
+
+
+
+nav {
+  display: flex; /* Enable flexbox for the navigation container */
+  justify-content: space-between; /* Distribute navigation items evenly */
+}
+
+nav ul {
+  flex: 1; /* Make the navigation list (ul) flexible and fill remaining space */
+}
+
 nav ul {
   list-style-type: none;
+  font-size:larger;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  overflow:visible;
+  background-color: #ffffff;
 }
 
 nav li {
@@ -48,7 +63,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #111;
+  background-color: #9b9898;
+  color: rgb(255, 255, 255);
 }
 
 /* Main Content Styles */

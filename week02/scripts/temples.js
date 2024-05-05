@@ -10,7 +10,7 @@ const menuToggle = document.getElementById('menuToggle'); // Add id in HTML
 const navigationMenu = document.getElementById('menu'); // Add id in HTML
 
 menuToggle.addEventListener('click', function () {
-  navigationMenu.classList.toggle('show');
+  navigationMenu.classList.toggle('active');
 });
 
 // Responsive hamburger menu functionality (optional)
@@ -23,7 +23,7 @@ mediaQuery.addEventListener('change', () => {
     menuToggle.style.display = 'block'; // Show hamburger button on mobile
   } else {
     menuToggle.style.display = 'none'; // Hide hamburger button on larger screens
-    navigationMenu.classList.remove('show'); // Also hide the navigation menu
+    navigationMenu.classList.remove('active'); // Also hide the navigation menu
   }
 });
 

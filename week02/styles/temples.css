@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5; /* Light gray background */
-  color: #333; /* Dark gray text */
+  color: #ffffff; /* Dark gray text */
 }
 
 /* Header Styles */
@@ -16,8 +16,8 @@ header {
   justify-content: space-between;
   align-items: center;
   overflow: visible;
-  background-color: #fff; /* White header background */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #1b647a; /* White header background */
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1); /* Subtle shadow */
 }
 
 h1 {
@@ -31,6 +31,7 @@ h1 {
   display: flex; /* Enable flexbox for the container */
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically (optional) */
+  color: #1b647a; /* Dark gray text */
 }
 
 h2 {
@@ -63,7 +64,7 @@ nav ul {
   margin: 0;
   padding-right: 3rem;
   overflow: visible;
-  background-color: #ffffff;
+  background-color: #1b647a;
   display: flex;
 }
 
@@ -125,6 +126,20 @@ nav {
   }
 }
 
+/* Media query for smaller screens (optional adjustments) */
+@media (max-width: 768px) {
+
+  /* Hide hamburger menu button */
+  #menuToggle {
+    display: block;
+  }
+
+  /* Show the main menu list */
+  nav ul {
+    display: none;
+  }
+}
+
 /* Media query for larger screens (optional adjustments) */
 @media (min-width: 768px) {
 
@@ -139,6 +154,32 @@ nav {
   }
 }
 
+
+/* Reset default button styles (optional) */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0; /* Remove default padding */
+}
+
+/* Style the spans for the hamburger menu icon */
+#menuToggle span {
+  display: block; /* Make them block elements */
+  width: 25px; /* Set width for the lines */
+  height: 3px; /* Set height for the lines */
+  background-color: white; /* Change color as needed */
+  margin-bottom: 5px; /* Add spacing between lines */
+  transition: all 0.3s ease; /* Add transition for animation */
+}
+
+#menuToggle.active span:nth-child(1) { /* Style the first span on click */
+  transform: rotate(45deg) translateX(8px); /* Rotate and move for X shape */
+}
+
+#menuToggle.active span:nth-child(2) { /* Style the second span on click */
+  opacity: 0; /* Hide the second span */
+}
 
 
 
@@ -171,7 +212,7 @@ figcaption {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #eee; /* Light gray footer background */
+  background-color: #1b647a; /* Light gray footer background */
 }
 
 /* Mobile View (Single Column) */

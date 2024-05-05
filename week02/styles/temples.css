@@ -127,11 +127,12 @@ nav {
 }
 
 /* Media query for smaller screens (optional adjustments) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
   /* Hide hamburger menu button */
   #menuToggle {
-    display: block;
+    display: contents;
+    padding-right: 3rem;
   }
 
   /* Show the main menu list */

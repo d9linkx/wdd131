@@ -15,17 +15,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  overflow: visible;
   background-color: #fff; /* White header background */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 h1 {
-  font-size: 1.5rem; /* Adjust font size for mobile */
+  font-size: 1.6rem; /* Adjust font size for mobile */
   margin: 0;
+  padding-left: 3rem;
 }
 
-
+h2 {
+  font-size: 1.6rem;
+  padding-left: 20rem;
+}
 
 /* Navigation Styles */
 
@@ -44,8 +48,8 @@ nav ul {
   list-style-type: none;
   font-size:larger;
   margin: 0;
-  padding: 0;
-  overflow:visible;
+  padding-right: 3rem;
+  overflow: visible;
   background-color: #ffffff;
 }
 

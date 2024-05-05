@@ -24,6 +24,8 @@ h1 {
   font-size: 1.6rem; /* Adjust font size for mobile */
   margin: 0;
   padding-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -132,7 +134,6 @@ nav {
   /* Hide hamburger menu button */
   #menuToggle {
     display: contents;
-    padding-right: 3rem;
   }
 
   /* Show the main menu list */
@@ -164,13 +165,14 @@ button {
   padding: 0; /* Remove default padding */
 }
 
-/* Style the spans for the hamburger menu icon */
+/* Style the spans (size, etc) for the hamburger menu icon */
 #menuToggle span {
   display: block; /* Make them block elements */
   width: 25px; /* Set width for the lines */
-  height: 3px; /* Set height for the lines */
+  height: 2px; /* Set height for the lines */
+  margin-right: 3rem;
   background-color: white; /* Change color as needed */
-  margin-bottom: 5px; /* Add spacing between lines */
+  margin-bottom: 4px; /* Add spacing between lines */
   transition: all 0.3s ease; /* Add transition for animation */
 }
 

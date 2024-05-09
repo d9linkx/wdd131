@@ -1,0 +1,30 @@
+/* Media query for larger screens (adjust as needed) */
+@media (min-width: 768px) {
+
+  /* Header Styles (optional adjustments) */
+  h1 {
+    font-size: 2rem; /* Larger font size */
+  }
+
+  /* Navigation Styles */
+  nav {
+    flex-direction: row; /* Stack navigation items vertically */
+    align-items: center; /* Center them horizontally */
+    margin-top: 1rem; /* Add some margin from the top */
+  }
+
+  nav li {
+    margin-right: 0; /* Remove horizontal spacing */
+    margin-bottom: 1rem; /* Add spacing between items */
+  }
+
+  /* Main Content Styles */
+  main {
+    max-width: 1000px; /* Adjust max-width for larger screens */
+  }
+
+  /* Figure Styles (Responsive Columns) */
+  .figure {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

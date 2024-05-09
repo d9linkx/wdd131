@@ -1,0 +1,234 @@
+/* Import fonts from Google Fonts (Choose your fonts here) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Body Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #ffffff; /* Dark gray text */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible;
+  background-color: #1b647a; /* White header background */
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 1.6rem; /* Adjust font size for mobile */
+  margin: 0;
+  padding-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.h2-container {
+  display: flex; /* Enable flexbox for the container */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically (optional) */
+  color: #1b647a; /* Dark gray text */
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-left: 26rem;
+  padding-right: 26rem;
+}
+
+/* Navigation Styles */
+
+
+@media (min-width: 768px) { /* Target screens wider than 768px */
+  .menu-box {
+    display: block; /* Show the menu box on larger screens */
+  }
+}
+
+nav {
+  display: flex; /* Enable flexbox for the navigation container */
+  justify-content: space-between; /* Distribute navigation items evenly */
+}
+
+nav ul {
+  flex: 1; /* Make the navigation list (ul) flexible and fill remaining space */
+}
+
+nav ul {
+  list-style-type: none;
+  font-size:larger;
+  margin: 0;
+  padding-right: 3rem;
+  overflow: visible;
+  background-color: #1b647a;
+  display: flex;
+}
+
+nav li {
+  float: left;
+  margin-right: 1rem;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #9b9898;
+  color: rgb(255, 255, 255);
+}
+
+
+/* Setting the menu for phones and other screen sizes*/
+
+/* Reset default styles for buttons and ul (optional) */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex; /* Enable flexbox for better menu alignment */
+  justify-content: space-between; /* Distribute items horizontally */
+  align-items: center; /* Align vertically on center */
+}
+
+#menuToggle {
+  display: none; /* Hide on larger screens initially */
+}
+
+/* Media query for phone screens (adjust as needed) */
+@media (max-width: 768px) {
+
+  /* Show hamburger menu button */
+  #menuToggle {
+    display: block;
+  }
+
+  /* Hide the main menu list initially */
+  nav ul {
+    display: none;
+  }
+}
+
+/* Media query for smaller screens (optional adjustments) */
+@media (min-width: 768px) {
+
+  /* Hide hamburger menu button */
+  #menuToggle {
+    display: contents;
+  }
+
+  /* Show the main menu list */
+  nav ul {
+    display: none;
+  }
+}
+
+/* Media query for larger screens (optional adjustments) */
+@media (min-width: 768px) {
+
+  /* Hide hamburger menu button */
+  #menuToggle {
+    display: none;
+  }
+
+  /* Show the main menu list */
+  nav ul {
+    display: flex;
+  }
+}
+
+
+/* Reset default button styles (optional) */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0; /* Remove default padding */
+}
+
+/* Style the spans (size, etc) for the hamburger menu icon */
+#menuToggle span {
+  display: block; /* Make them block elements */
+  width: 25px; /* Set width for the lines */
+  height: 2px; /* Set height for the lines */
+  margin-right: 3rem;
+  background-color: white; /* Change color as needed */
+  margin-bottom: 4px; /* Add spacing between lines */
+  transition: all 0.3s ease; /* Add transition for animation */
+}
+
+#menuToggle.active span:nth-child(1) { /* Style the first span on click */
+  transform: rotate(45deg) translateX(8px); /* Rotate and move for X shape */
+}
+
+#menuToggle.active span:nth-child(2) { /* Style the second span on click */
+  opacity: 0; /* Hide the second span */
+}
+
+
+
+
+
+
+/* Main Content Styles */
+main {
+  max-width: 700px; /* Limit main content width */
+  margin: 2rem auto; /* Center horizontally */
+}
+
+/* Figure Styles */
+.figure {
+  display: grid;
+  grid-template-columns: 1fr; /* One column for mobile */
+  grid-gap: 1rem; /* Spacing between figures */
+}
+
+figure img {
+  width: 100%; /* Images fill the figure width */
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1b647a; /* Light gray footer background */
+}
+
+/* Mobile View (Single Column) */
+.figure {
+  display: grid;
+  grid-template-columns: 1fr; /* One figure per row */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Adjust for Larger Screens (temples-large.css) */
+@media (min-width: 768px) {
+  .figure {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  }
+}

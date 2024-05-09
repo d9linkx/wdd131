@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+
+    <nav>
+      <div id="menuToggle">
+        <button>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+        <script>
+          const menuToggle = document.getElementById("menuToggle");
+        
+          menuToggle.addEventListener("click", function() {
+            menuToggle.classList.toggle("active");
+          });
+        </script>
+
+      </div>
+        <!-- The navigation menu -->
+        <ul id="menu">
+          <li><a href="#" style="color: rgb(255, 255, 255);">Home</a></li>
+          <li><a href="#" style="color: rgb(255, 255, 255);">Old</a></li>
+          <li><a href="#" style="color: rgb(255, 255, 255);">New</a></li>
+          <li><a href="#" style="color: rgb(255, 255, 255);">Large</a></li>
+          <li><a href="#" style="color: rgb(255, 255, 255);">Small</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="h2-container">
+    <h2 >All Temples</h2>
+    </div>
+    <figure>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+      <img src="images/chicago-temple1.jpeg" alt="Placeholder Temple Image">
+      <figcaption>Chicago Temple</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> Prince Dike, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script>
+      document.getElementById('currentyear').textContent = new Date().getFullYear();
+      document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+  <script src="scripts/temples.js" defer></script>
+
+</body>
+</html>

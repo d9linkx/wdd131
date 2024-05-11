@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Place to Explore - Spain</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>A Place to Explore - Spain</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/spain-hero-small.webp" media="(max-width: 600px)">
+        <source srcset="images/spain-hero-medium.webp" media="(max-width: 900px)">
+        <img src="images/spain-hero-large.jpg" alt="Hero Image of Spain">
+      </picture>
+    </section>
+
+    <section class="about">
+      <h2>About Spain</h2>
+      <p>Spain, a land of vibrant culture, rich history, and stunning landscapes, beckons travelers from all over the world. Immerse yourself in the flamenco rhythms of Andalusia, explore the architectural marvels of Barcelona, or relax on the pristine beaches of the Balearic Islands. From the snow-capped peaks of the Pyrenees to the sun-drenched coasts of the Mediterranean, Spain offers something for everyone.</p>
+    </section>
+
+    <section class="weather">
+      <h3>Weather</h3>
+      <img src="images/weather-icon.svg" class="mobile" alt="Weather Icon" width="32" height="32">
+      <span class="desktop">☀️</span>
+    </section>
+
+    <section class="things-to-do">
+      <h2>Things to Do in Spain</h2>
+      <ul>
+        <li>Explore the architectural wonders of Barcelona, including Sagrada Familia and Park Güell.</li>
+        <li>Wander the vibrant streets and soak up the culture in cities like Madrid, Seville, and Granada.</li>
+        <li>Relax on the beautiful beaches of the Balearic Islands or Costa del Sol.</li>
+        <li>Hike the scenic trails in Picos de Europa National Park or Pyrenees National Park.</li>
+        <li>Indulge in the delicious Spanish cuisine, from tapas to paella.</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <img src="images/spain-image1.jpg" alt="Image 1 of Spain">
+      <img src="images/spain-image2.jpg" alt="Image 2 of Spain">
+      <img src="images/spain-image3.jpg" alt="Image 3 of Spain">
+    </section>
+
+    <div class="carousel">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+      
+      <button id="prevButton">Previous</button>
+      <button id="nextButton">Next</button>
+      
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> 💐 Prince Dike, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+</html>

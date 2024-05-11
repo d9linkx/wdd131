@@ -1,0 +1,123 @@
+/* Global Variables */
+:root {
+    --primary-color: #c72c4e; /* Red from Spanish flag */
+    --secondary-color: #ffc107; /* Yellow from Spanish flag */
+    --text-color: #333;
+    --font-family: "DM Sans", sans-serif;
+  }
+  
+  /* Body Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  
+  /* Main Styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* About Section Styles */
+  .about {
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    line-height: 1.5;
+  }
+  
+  /* Weather Section Styles */
+  .weather {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather img,
+  .weather::after {
+    margin-right: 10px;
+  }
+  
+  /* Media Queries for Responsive Weather Icon */
+  @media (max-width: 768px) {
+    .weather::after {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .weather img {
+      display: none;
+    }
+  }
+  
+  .weather::after {
+    content: "☀️"; /* Sunny weather icon */
+    font-size: 2em;
+    color: var(--primary-color);
+  }
+  
+  /* Things to Do Section Styles */
+  .things-to-do {
+    margin-bottom: 20px;
+  }
+  
+  .things-to-do ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .things-to-do li {
+    margin-bottom: 10px;
+  }
+  
+  /* Gallery Section Styles */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .gallery img {
+    width: 32%;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  

@@ -10,7 +10,7 @@
 
 /* Set font family for the body */
 body, h1, h2, h3, p {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Style the header */
@@ -34,7 +34,7 @@ header .container {
 /* Style the h1 inside the header */
 header h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -48,7 +48,7 @@ nav {
 nav a {
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -56,7 +56,13 @@ nav a:hover {
   background-color: #026c9e; /* Darker shade for hover */
 }
 
-
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  flex-direction: column; /* Stack links vertically */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for links */
+}
 
 
 /*MENU DESIGN OF THE HAMBURGER ICON FOR MOBILE SCREENS*/
@@ -105,14 +111,11 @@ nav a:hover {
       display: flex; /* Show navigation links as a horizontal list */
       flex-direction: row; /* Align links horizontally */
       position: static; /* Remove absolute positioning */
-      background-color: transparent; /* Remove background color */
-      width: auto; /* Set width automatically */
-      top: 0; /* Remove top positioning */
-      left: 0; /* Remove left positioning */
+      justify-content: space between;
   }
 
   .nav-links li {
-      margin: 0 15px; /* Space out the horizontal links */
+      margin: 0; /* Space out the horizontal links */
       text-align: left; /* Align text to the left */
   }
 

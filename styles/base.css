@@ -1,139 +1,143 @@
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
 
 /* Set font family for the body */
-h1, h2, h3, text, text {
-    font-family: 'DM Sans', serif;
-  }
-
+body, h1, h2, h3, p {
+  font-family: 'DM Sans', sans-serif;
+}
 
 /* Style the header */
 header {
-    background-color: #1f9c92; /* Navy blue background */
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    padding: 20px;
+  background-color: #0288D1; /* Deep Sky Blue background */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  color: #ffffff; /* White text for header */
+}
+
+/* Style the h1 inside the header */
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 /* Style the navigation menu */
-
-header {
-    /* Arranges menu in different row*/
-    display: grid; /* Enables elements to arrange elements horizontally */
-    list-style: none;
-    font-family: 'DM Sans', serif;
-    align-items: center; /* Aligns elements vertically in the center */
-    /* Add margins/padding for spacing as needed */
-  }
-  
-  h1 {
-    /* Adjust font size, weight, and other styles as desired */
-  }
-  
-  nav {
-    display: flex; /* Makes the menu items a flexbox for inline arrangement */
-    background-color: #000000;
-    justify-content: center;
-    word-spacing: inherit;
-    list-style: none; /* Removes bullet points if present */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-  }
-  
-  nav a {
-    padding: 10px; /* Add padding for spacing between links */
-    margin: auto;
-    text-decoration: none; /* Removes underline from links */
-  }
-  
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
 nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-nav a:hover {
-    text-decoration: overline;
-    background-color: #2c3e50; /* Darker shade for hover effect */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Style for active menu item */
-.active {
-    color: #ffd700; /* Gold color for active link */
+nav a:hover {
+  background-color: #026c9e; /* Darker shade for hover */
 }
 
 /* Style the main element */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    font-family: 'DM Sans', serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 /* Style the card class */
 .card {
-    background-color: #eaeaea;
-    border: 1px solid #8bd7d1;
-    padding: 20px;
-    border-radius: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #8bd7d1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* To remove the bullet points on the Resources list*/
-.card ul {
-    list-style: none;
-  }  
-
-
-
-
+/* About Me section */
 .about-me-container {
-    display: flex; /* Enables elements to arrange in a row */
-    /* Add margins/padding for spacing as needed */
-  }
-  
-  .about-me-text {
-    flex: 1; /* Makes the text content flexible within the container */
-    /* Add paddings for spacing as needed */
-    padding: 10px; /* Add padding for spacing */
-  }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
+.about-me-text {
+  flex: 1;
+}
 
+.profile-photo {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Resources section */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.card ul li a {
+  color: #0288D1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+  color: #026c9e;
+}
+
+/* Nigeria section */
+.flag-container {
+  text-align: center;
+}
+
+.flag {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Style the footer */
 footer {
-    background-color: #1f9c92;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-family: 'DM Sans', serif;
+  background-color: #0288D1;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 5px 0;
 }
 
 /* Media query for larger views */
 @media (min-width: 640px) {
-    nav ul {
-        display: flex;
-    }
-    nav ul li {
-        flex: 1;
-    }
+  nav {
+      justify-content: flex-end;
+  }
+  nav a {
+      margin: 0 10px;
+  }
 }
 
 @media screen and (min-width: 640px) {
   h1 {
-    font-size: 2.5rem;
-    margin: 1rem;
-    color: navy;
+      font-size: 2.5rem;
+      color: navy;
   }
 }

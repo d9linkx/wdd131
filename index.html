@@ -17,11 +17,16 @@
 <body>
     <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - Prince C. Dike</h1>
+
         <nav>
             <a href="https://www.linkedin.com/in/prince-dike/">LinkedIn</a>
             <a href="https://byui.instructure.com/">I-Learn</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a>
             <a href="#">Final Project</a>
+
+            <div class="menu-icon" id="menu-icon">
+                &#9776; <!-- Hamburger icon -->
+            </div>
         </nav>
     </header>
     <main>
@@ -63,10 +68,21 @@
         <p>© <span id="currentyear"></span> Prince Dike, Nigeria</p>
         <p id="lastModified"></p>
     </footer>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('nav-active');
+            console.log("Menu icon clicked!"); // Log for debugging
+        });
+    </script>
+
     <script>
         document.getElementById('currentyear').textContent = new Date().getFullYear();
         document.getElementById('lastModified').textContent = document.lastModified;
     </script>
+
 </body>
 
 </html>

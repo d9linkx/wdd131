@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 /* Set font family for the body */
 body, h1, h2, h3, p {

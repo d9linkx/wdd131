@@ -23,6 +23,14 @@ header {
   color: #ffffff; /* White text for header */
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 97.6%; /* Adjust max-width as needed */
+  padding: 0 1rem;
+}
+
 /* Style the h1 inside the header */
 header h1 {
   font-size: 2rem;
@@ -33,8 +41,8 @@ header h1 {
 /* Style the navigation menu */
 nav {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
@@ -47,6 +55,75 @@ nav a {
 nav a:hover {
   background-color: #026c9e; /* Darker shade for hover */
 }
+
+
+
+
+/*MENU DESIGN OF THE HAMBURGER ICON FOR MOBILE SCREENS*/
+
+/* Initial styles for menu icon and nav links */
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  font-size: 28px; /* Size of the hamburger icon */
+  cursor: pointer; /* Show pointer on hover */
+  color: #FFFFFF; /* White color for icon */
+}
+
+/* Responsive device styles */
+
+@media (max-width: 768px) { /* For mobile screens */
+
+  .nav-links {
+      display: none; /* Hide navigation links by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Position the menu */
+      background-color: #6e6e6e; /* Match header color */
+      width: 100%; /* Full width */
+      top: 60px; /* Position below the header */
+      left: 0; /* Align to the left */
+  }
+
+  .nav-links li {
+      margin: 0 15px; /* Space out the vertical links */
+      text-align: left; /* Center text */
+  }
+
+  .menu-icon {
+      display: block; /* Show the menu icon on mobile */
+  }
+}
+
+/* Show the nav links when the menu icon is clicked */
+.nav-active {
+  display: flex; /* Display the links */
+}
+
+
+@media (min-width: 769px) { /* For desktop screens */
+
+  .nav-links {
+      display: flex; /* Show navigation links as a horizontal list */
+      flex-direction: row; /* Align links horizontally */
+      position: static; /* Remove absolute positioning */
+      background-color: transparent; /* Remove background color */
+      width: auto; /* Set width automatically */
+      top: 0; /* Remove top positioning */
+      left: 0; /* Remove left positioning */
+  }
+
+  .nav-links li {
+      margin: 0 15px; /* Space out the horizontal links */
+      text-align: left; /* Align text to the left */
+  }
+
+  .menu-icon {
+      display: none; /* Hide the menu icon on desktop */
+  }
+}
+
+
+
+
 
 /* Style the main element */
 main {

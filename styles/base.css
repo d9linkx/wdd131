@@ -126,6 +126,78 @@ nav a:hover {
 
 
 
+/* General Style for Course Section */
+.courses-section {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the filter buttons */
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #000000; /* Black filter buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  background-color: #444444; /* Darker shade on hover */
+}
+
+/* Styling for the course grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Course button styles */
+.course-btn {
+  padding: 20px;
+  background-color: #a67254; /* Brown color as seen in the screenshot */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.course-btn.completed {
+  background-color: #81D4FA; /* Light Sky Blue for completed courses */
+  color: #000;
+  border: 2px solid #0288D1; /* Darker border for completed */
+}
+
+.course-btn:hover {
+  background-color: #8b5e42; /* Darker shade for hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 /* Style the main element */

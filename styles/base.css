@@ -154,6 +154,23 @@ main {
   gap: 20px;
 }
 
+/* Mobile view */
+
+
+@media (max-width: 768px) {
+  .about-me-container {
+    justify-content: right;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  .flag-container {
+    padding: 0 20px;
+  }
+}
+
 .about-me-text {
   flex: 1;
 }
@@ -198,6 +215,13 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.flag-container img,
+.profile-photo {
+  margin: 0 auto;
+  display: block;
+}
+
 /* Style the footer */
 footer {
   background-color: #0288D1;
@@ -234,3 +258,4 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+

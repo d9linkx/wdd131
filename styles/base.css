@@ -94,6 +94,73 @@ nav a:hover {
   color: #FFFFFF; /* White color for icon */
 }
 
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Hide nav-links on mobile initially */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px; /* Adjust according to navbar height */
+  left: 0;
+  background-color: #0288D1; /* Same as navbar */
+  text-align: center;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+/* Show hamburger on small screens */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #0288D1; /* Menu background color */
+    width: 10%;
+    height: 20vh; /* Full-screen height */
+    display: none; /* Hide by default */
+    justify-content: right;
+    align-items: center;
+  }
+
+  .nav-links.show {
+    display: grid; /* Show when active */
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .nav-link {
+    font-size: 20px; /* Increase font size for mobile */
+  }
+}
+
 /* Responsive device styles */
 
 @media (max-width: 768px) { /* For mobile screens */

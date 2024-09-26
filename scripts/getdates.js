@@ -65,3 +65,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
     }
   });
   
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+  

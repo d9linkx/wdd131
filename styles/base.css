@@ -15,7 +15,7 @@ body, h1, h2, h3, p {
 
 /* Style the header */
 header {
-  background-color: #0288D1; /* Deep Sky Blue background */
+  background-color: #026199; /* Deep Sky Blue background */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -53,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #026c9e; /* Darker shade for hover */
+  background-color: #015688; /* Darker shade for hover */
 }
 
 .nav-links {
@@ -164,7 +164,7 @@ nav a:hover {
 /* Course button styles */
 .course-btn {
   padding: 20px;
-  background-color: #a67254; /* Brown color as seen in the screenshot */
+  background-color: #8b563f; /* Brown color as seen in the screenshot */
   color: white;
   border: none;
   border-radius: 5px;
@@ -175,14 +175,22 @@ nav a:hover {
 }
 
 .course-btn.completed {
-  background-color: #81D4FA; /* Light Sky Blue for completed courses */
+  background-color: #4dbfe3; /* Light Sky Blue for completed courses */
   color: #000;
   border: 2px solid #0288D1; /* Darker border for completed */
 }
 
 .course-btn:hover {
-  background-color: #8b5e42; /* Darker shade for hover */
+  background-color: #734835; /* Darker shade for hover */
 }
+
+nav a:hover {
+  background-color: #02587b; /* Darker blue for hover state */
+}
+
+
+
+
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
@@ -274,13 +282,13 @@ img {
 }
 
 .card ul li a {
-  color: #0288D1;
+  color: #015c84;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .card ul li a:hover {
-  color: #026c9e;
+  color: #015688;
 }
 
 /* Nigeria section */
@@ -307,7 +315,7 @@ img {
 
 /* Style the footer */
 footer {
-  background-color: #0288D1;
+  background-color: #026199;
   color: #ffffff;
   text-align: center;
   padding: 20px;

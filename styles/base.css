@@ -15,6 +15,115 @@ body, h1, h2, h3, p {
 
 /* Style the header */
 header {
+  background-color: #0288D1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* Style the h1 inside the header */
+header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+/* Mobile view */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .flag-container {
+    padding: 0 20px;
+  }
+}
+
+/* Main section styles */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flag-container img,
+.profile-photo {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #0288D1;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* Set font family for the body */
+body, h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style the header */
+header {
   background-color: #0288D1; /* Deep Sky Blue background */
   display: flex;
   align-items: center;

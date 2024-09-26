@@ -154,6 +154,17 @@ main {
   gap: 20px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flag-container img,
+.profile-photo {
+  margin: 0 auto;
+  display: block;
+}
+
 /* Mobile view */
 
 

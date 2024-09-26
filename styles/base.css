@@ -105,13 +105,15 @@ nav a:hover {
 }
 
 
-@media (min-width: 769px) { /* For desktop screens */
+@media (min-width: 1024px) { /* For desktop screens */
 
   .nav-links {
-      display: flex; /* Show navigation links as a horizontal list */
+      display: grid; /* Show navigation links as a horizontal list */
       flex-direction: row; /* Align links horizontally */
       position: static; /* Remove absolute positioning */
       justify-content: space between;
+      grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+      grid-gap: 30px; /* Add more gap for desktop */
   }
 
   .nav-links li {
@@ -153,6 +155,13 @@ main {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+/* Consistent padding */
+.card,
+.flag-container,
+.about-me-container {
+    padding: 20px;
 }
 
 .about-me-text {
@@ -221,32 +230,20 @@ footer p {
   }
 }
 
-@media screen and (min-width: 640px) {
-  h1 {
-      font-size: 2.5rem;
-      color: navy;
-  }
+
+
+
+.profile-photo {
+    margin-bottom: 20px; /* Add spacing between text and image */
 }
-
-
-@media (max-width: 768px) {
-  .about-me-container {
-      flex-direction: column; /* Stack text and image vertically */
-      align-items: center;
-  }
   
-  .profile-photo {
-      margin-bottom: 20px; /* Add spacing between text and image */
-  }
-  
-  .flag-container {
-      padding: 0 20px; /* Add padding to prevent overflow */
-  }
+.flag-container {
+    padding: 0 20px; /* Add padding to prevent overflow */
 }
 
 
 img {
-  max-width: 100%;
+  max-width: 00%;
   height: auto;
 }
 
@@ -256,3 +253,116 @@ img {
   overflow: hidden; /* Prevent elements from causing overflow */
 }
 
+.flag-container img,
+.profile-photo {
+    margin: 0 auto; /* Center images */
+    display: block;
+}
+
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* Set font family for the body */
+body, h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0288D1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* Style the h1 inside the header */
+header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+/* Mobile view */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .flag-container {
+    padding: 0 20px;
+  }
+}
+
+/* Main section styles */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flag-container img,
+.profile-photo {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #0288D1;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}

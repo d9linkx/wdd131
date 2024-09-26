@@ -313,17 +313,29 @@ img {
   display: block;
 }
 
+
 /* Style the footer */
 footer {
-  background-color: #026199;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
+  background-color: #015688; /* Maintain your current footer background */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 20px 10px; /* Equal padding on all sides */
+  box-sizing: border-box; /* Ensures padding does not cause overflow */
+  width: 100%; /* Full width of the viewport */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Adjust footer layout for larger screens */
+@media (min-width: 768px) {
+  footer {
+    padding: 20px 40px; /* Increased padding for desktop screens */
+  }
 }
 
 footer p {
-  margin: 5px 0;
+  margin: 5px 0; /* Ensure consistent spacing between paragraphs */
 }
+
 
 /* Media query for larger views */
 @media (min-width: 640px) {

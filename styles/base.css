@@ -64,6 +64,25 @@ nav a:hover {
   display: flex; /* Use flexbox for links */
 }
 
+/* Wayfinding effect: style for the active link */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #026c9e; /* Darker shade on hover */
+}
+
+.nav-link.active {
+  background-color: #ffffff; /* White background for active link */
+  color: #0288D1; /* Blue text color for active link */
+  border-radius: 5px; /* Rounded corners for active link */
+  font-weight: bold; /* Make the active link stand out */
+}
+
 
 /*MENU DESIGN OF THE HAMBURGER ICON FOR MOBILE SCREENS*/
 

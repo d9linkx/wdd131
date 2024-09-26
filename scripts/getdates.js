@@ -56,3 +56,12 @@ document.getElementById("wdd-btn").addEventListener("click", () => renderCourses
 
 // Initial rendering of all courses
 renderCourses();
+
+
+// Automatically add active class to the current page's nav link
+document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    }
+  });
+  
